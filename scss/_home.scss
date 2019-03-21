@@ -1,0 +1,261 @@
+/* Start About Area css
+=========================================================================================== */
+
+.about_area {
+    .section-title-wrap {
+        margin-bottom: 40px;
+    }
+    .about_box {
+        background: $lightGray;
+        padding: 80px 120px 21px;
+    }
+    .activity {
+        .activity_box {
+            background: $white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid $gray;
+            border-radius: 5px;
+            @include transition();
+            i {
+                font-size: 24px;
+                color: $primary-color;
+            }
+            h3 {
+                margin-top: 10px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            &:hover {
+                box-shadow: 0 8px 21px $gray;
+                border: 1px solid transparent;
+            }
+        }
+    }
+}
+
+.single_about {
+    .top_icon {
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            background: rgba($primary-color, .1);
+        }
+    }
+}
+
+/* End About Area
+=========================================================================================== */
+
+/* Start Service Area
+=========================================================================================== */
+.service-area {
+    background: $title-color;
+}
+.single-service {
+    .service-box {
+        background: $title-color;
+        @include transition();
+        border: 1px solid rgba(#ffffff, .3);
+        padding: 50px 50px 45px;
+        @media (max-width: 767px) {
+            padding: 50px 20px 45px;
+        }
+    }
+    .thumb {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .f-img {
+        @include transition();
+    }
+    h3 {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        @include transition();
+        br {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+    p {
+        margin: 20px 0px;
+    }
+    a {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        @include transition();
+    }
+    &:hover {
+        .service-box {
+            background: #ffffff;
+        }
+        h3 {
+            color: $primary-color;
+        }
+        .f-img {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        a {
+            color: $title-color;
+        }
+    }
+}
+/* End Service Area
+=========================================================================================== */
+
+/*Start Appointment Area
+=========================================================================================== */
+
+.appointment-area {
+    background: $lightGray;
+    position: relative;
+    z-index: 5;
+    .estimated-cost {
+        margin:-20px 0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+        .form-wrap {
+            padding: 30px 40px 50px;
+            @media(max-width: 413px) {
+                padding:0px;
+            }
+            .confirm_btn_box {
+                @media (max-width: 420px) {
+                    padding-bottom: 50px;
+                }
+            }
+            .main_btn {
+                border-radius: 0;
+            }
+            .form-control {
+                margin-bottom: 10px;
+                border-radius: 0px;
+                padding: 0.675rem 0.75rem;
+                font-size: 13px;
+                font-weight: 300;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .current {
+                margin-left: -32px;
+                font-size: 13px;
+            }
+            .form-select .nice-select {
+                border: 1px solid #ced4da;
+                margin-bottom: 10px;
+                background: $white !important;
+            }
+            .form-select .nice-select .list {
+                border: 1px solid $primary-color;
+                .option {
+                    padding-left: 15px;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                    &.selected {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .primary-btn {
+                width: 100%;
+                margin-top: 5px;
+            }
+            textarea {
+                width: 100%;
+                border: 1px solid #ced4da;
+                margin-bottom: 20px;
+                padding: 0.675rem 0.75rem;
+                font-size: 13px;
+                font-weight: 300;
+                &:focus {
+                    border: 1px solid $primary-color;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+/*End Appointment Area
+=========================================================================================== */
+
+/*Start Recent Blog Area
+=========================================================================================== */
+
+.single-home-blog {
+    .thumb {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    h4 {
+        font-weight: 600;
+        margin-top: 35px;
+        @include transition();
+    }
+    a {
+        color: #222;
+    }
+    .name {
+        font-size: 13px;
+        font-weight: 100;
+    }
+    p {
+        text-align: left;
+        margin: 20px 0px;
+        max-width: 310px;
+    }
+    .bottom {
+        padding: 10px 0;
+        span {
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    @media(max-width:991px) {
+        margin-bottom: 30px;
+        .meta {
+            margin-top: 20px;
+        }
+    }
+    @media(max-width:767px) {
+        .meta {
+            margin-top: 0px;
+        }
+    }
+    .f-img {
+        @include transition();
+    }
+    &:hover {
+        cursor: pointer;
+        h4 {
+            color: $primary-color;
+        }
+        .f-img {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* end Recent Blog Area
+=========================================================================================== */

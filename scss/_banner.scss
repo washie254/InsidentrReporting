@@ -1,0 +1,81 @@
+//--------- Start Home Banner Area -------------//
+.home_banner_area {
+    background: url(../img/banner/home.jpg) no-repeat center bottom;
+    position: relative;
+    z-index: 1;
+    height: 900px;
+    @media(max-width: 992px) {
+        height: 600px;
+    }
+    .overlay {
+        background: rgba($primary-color, .8);
+    }
+    .banner_inner {
+        position: relative;
+        width: 100%;
+        min-height: 900px;
+        .banner_content {
+            padding-top: 110px;
+            vertical-align: middle;
+        }
+        .banner-left {
+            background: $title-color;
+            padding: 60px 53px;
+            h1 {
+                font-size: 48px;
+                color: $white;
+                margin: 0;
+            }
+        }
+        .banner-right {
+            background: $white;
+            padding: 60px 40px;
+            p {
+                max-width: 498px;
+                margin: 0;
+            }
+            .main_btn {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+//--------- End Home Banner Area -------------//
+//--------- Start Banner Area -------------//
+.banner-area {
+    background: url(../img/banner/home.jpg) center;
+    background-size: cover;
+    .primary-btn {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .overlay-bg {
+        background-color: rgba(#000, .5)
+    }
+}
+
+.banner-content {
+    text-align: center;
+    h1 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1em;
+        margin-top: 20px;
+        span {
+            font-weight: 700;
+        }
+        @media ( max-width:414px) {
+            font-size: 40px;
+        }
+    }
+    h4 {
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+}
+
+//--------- End Banner Area -------------//
