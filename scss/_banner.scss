@@ -12,17 +12,23 @@
         .banner_content {
             padding: 194px 0px;
             vertical-align: middle;
-            @media (max-width: 1199px) {
+            @media (max-width: 991px) {
                 padding: 100px 0px;
             }
         }
         .banner-left {
             background: $title-color;
             padding: 60px 53px;
+            @media (max-width: 991px) {
+                padding: 60px 20px;
+            }
             h1 {
                 font-size: 48px;
                 color: $white;
                 margin: 0;
+                @media (max-width: 767px) {
+                    font-size: 35px;
+                }
             }
         }
         .banner-right {
@@ -38,6 +44,9 @@
                 bottom: 0px;
                 background: $title-color;
                 border: 0px;
+                @media (max-width: 767px) {
+                    position: relative;
+                }
                 &:before {
                     background: $title-color;
                 }

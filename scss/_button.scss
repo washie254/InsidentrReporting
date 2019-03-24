@@ -21,6 +21,9 @@
     letter-spacing: 0.5px;
     z-index: 1;
     @include transition;
+    @media (max-width: 767px) {
+        line-height: 50px;
+    }
     &:before {
         content: '';
         position: absolute;
