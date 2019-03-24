@@ -4,24 +4,28 @@
 /* =================================== */
 
 .footer-area {
-    background-color: #222222;
-    .footer-nav {
-        li {
-            margin-top: 8px;
-            a {
-                color: $text-color;
-                &:hover {
-                    color: $primary-color;
-                }
-            }
+    position: relative;
+    @media (max-width: 1199px) {
+        margin-top: 80px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 582px;
+        background: $title-color;
+        @media (max-width: 1199px) {
+            height: 100%;
         }
     }
     h6 {
-        color: #fff;
         margin-bottom: 25px;
         font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 1px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
     }
 }
 
@@ -32,30 +36,13 @@
     }
 }
 
-.instafeed {
-    margin: -5px;
-    li {
-        overflow: hidden;
-        width: 25%;
-        img {
-            margin: 5px;
-        }
-    }
-}
-
 .footer-social {
-    text-align: right;
     a {
-        background: #111111;
+        padding-right: 25px;
         @include transition();
-        width: 32px;
-        display: inline-block;
-        text-align: center;
-        padding: 5px 0px;
         &:hover {
-            background: $primary-color;
             i {
-                color: #fff;
+                color: $primary-color;
             }
         }
     }
@@ -63,63 +50,38 @@
         color: #cccccc;
         @include transition();
     }
+    @media (max-width: 991px) {
+        text-align: left;
+    }
 }
 
 .single-footer-widget {
-    .footer-nav {
-        list-style: none;
-        padding: 0;
-    }
-    h3 {
-        color: $white;
-    }
-    .form-group {
-        width: 100%;
-        .main_btn {
-            border-radius: 20px;
-            line-height: 40px;
-            span {
-                margin-left: 5px;
-            }
-        }
-    }
     input {
-        line-height: 38px;
         border: none;
-        background: #2d2d2d;
+        width: 80% !important;
         font-weight: 300;
-        border-radius: 20px;
-        color: #fff;
+        background: transparent;
         padding-left: 20px;
-        width: 100%;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 10px 18px;
+        border: 1px solid #dddddd;
         &:focus {
-            outline: none;
+            box-shadow: none;
+            background: transparent;
         }
     }
     .bb-btn {
-        background: $primary-color;
+        color: $primary-color;
         color: #fff;
         font-weight: 300;
         border-radius: 0;
         z-index: 9999;
         cursor: pointer;
     }
-    .primary-btn {
-        padding-right: 55px;
-    }
-    @media(max-width:991px) {
-        .nw-btn {
-            margin-top: 20px;
-        }
-    }
-    @media(max-width:1024px) {
-        .newsletter {
-            padding-bottom: 40px;
-        }
-    }
     .info {
         position: absolute;
-        margin-top: 122px;
+        margin-top: 50px;
         color: #fff;
         font-size: 12px;
         &.valid {
@@ -129,13 +91,22 @@
             color: red;
         }
     }
+    .click-btn {
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 7px 12px;
+        border: 0;
+    }
     ::-moz-selection {
         /* Code for Firefox */
-        background-color: $primary-color;
+        background-color: #191919 !important;
         color: $text-color;
     }
     ::selection {
-        background-color: $primary-color;
+        background-color: #191919 !important;
         color: $text-color;
     }
     ::-webkit-input-placeholder {
@@ -165,13 +136,20 @@
         color: $text-color;
         font-weight: 300;
     }
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+    }
 }
 
-.footer-bottom {
-    padding-top: 80px;
+@media (max-width: 800px) {
+    .social-widget {
+        margin-top: 30px;
+    }
 }
 
 .footer-text {
+    padding-top: 20px;
+    margin-bottom: 0px;
     a,
     i {
         color: $primary-color;

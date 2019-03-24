@@ -21,49 +21,29 @@
     };
     navbarFixed();
 
-    // Search Button
-    $('#searchInput').hide();
-    $('.search_btn').on('click', function() {
-        $('#searchInput').fadeToggle(750);
-    });
-
-
-    //--------  Carousel --------// 
-    if($('.active-review-carusel').length) {
-        $('.active-review-carusel').owlCarousel({
-            loop: true,
-            margin: 0,
+    //--------  Testimonial Carousel --------// 
+    if ($('.active_testimonial').length) {
+        $('.active_testimonial').owlCarousel({
             items: 1,
-            nav: false,
-            dots: true,
+            loop: true,
+            dots: false,
+            nav: true,
+            margin: 0,
             responsiveClass: true,
             autoplay: 2500,
             slideSpeed: 300,
             paginationSpeed: 500,
-            responsive: {
-                0: {
-                    items: 1
-                }
-            }
+            navText: ["<i class='fa fa-long-arrow-left'>","<i class='fa fa-long-arrow-right'>"]
         });
     }
 
     //-------- Counter js --------//
-    $(window).on("load", function() {
+    $(window).on("load", function () {
         $('.counter').counterUp({
             delay: 10,
             time: 1000
         });
     });
-
-    // $('.active-review-carusel').owlCarousel({
-    //     items:1,
-    //     loop:true,
-    //     // autoplay:true,
-    //     autoplayHoverPause: true,        
-    //     margin:0,
-    //     dots: true
-    // });
 
     //------- Mailchimp js --------//  
 
