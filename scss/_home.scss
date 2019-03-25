@@ -2,6 +2,10 @@
 =========================================================================================== */
 
 .feature-area {
+    padding-bottom: 80px;
+    @media (max-width: 991px) {
+        padding-bottom: 30px;
+    }
     .section-title-wrap {
         h4 {
             font-size: 16px;

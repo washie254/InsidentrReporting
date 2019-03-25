@@ -79,6 +79,9 @@
     left: 0;
     z-index: 99;
     transition: background 0.4s, all 0.3s linear;
+    @media (max-width: 991px) {
+        position: absolute;
+    }
     .main_menu {
         background: #f8f8f8;
     }
@@ -120,7 +123,7 @@
             .nav-item {
                 margin-right: 45px;
                 .nav-link {
-                    font: 500 12px/80px $primary-font;
+                    font: 700 13px/80px $primary-font;
                     text-transform: uppercase;
                     color: $title-color;
                     padding: 0px;

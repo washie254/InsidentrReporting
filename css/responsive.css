@@ -30,13 +30,6 @@
         width: 100%;
         float: none;
     }
-    .about_myself .about_box {
-        padding: 30px 20px 20px;
-    }
-    .about_myself .activity .activity_box {
-        padding: 17px;
-        margin-bottom: 12px;
-    }
     .home_contact_area .left_img img {
         width: 100%;
     }
@@ -139,9 +132,6 @@
     .nav{
         padding: 0px 0px;
     }
-	.header_area + section, .header_area + row, .header_area + div {
-		margin-top: 117px;
-	}
     .header_top .nav{
         padding: 0px;
     }
@@ -164,9 +154,6 @@
 	}
 	.header_area .navbar .nav .nav-item {
 		margin-right: 0px;
-	}
-	.header_area + section, .header_area + row, .header_area + div {
-		margin-top: 0px;
 	}
 	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
 		line-height: 40px;
@@ -246,13 +233,6 @@
 	}
     /* End End Footer Area css
 	============================================================================================ */
-    .banner_area .banner_inner {
-        min-height: 420px;
-    }
-    .home_banner_area {
-        background-size: cover;
-        margin-bottom: 0px;
-    }
     .left_sidebar_area {
         margin-top: 50px;
     }
@@ -301,15 +281,6 @@
 }
 
 @media (max-width:768px) {
-    .home_banner_area {
-        min-height: 500px;
-    }
-    .home_banner_area .banner_inner {
-        min-height: 500px;
-    }
-    .home_banner_area .banner_inner .banner_content {
-        margin-top: 0px;
-    }
     /* Blog Page Area css
 	============================================================================================ */
     .blog_banner .banner_inner .blog_b_text h2 {
@@ -406,22 +377,8 @@
 }
 
 @media (max-width:575px) {
-    .header_area+section,
-    .header_area+row,
-    .header_area+div {
-        margin-top: 0px;
-    }
     /* Home Banner Area css
 	============================================================================================ */
-    .home_banner_area .banner_inner .banner_content h2 {
-        font-size: 28px;
-    }
-    .home_banner_area {
-        min-height: 500px;
-    }
-    .home_banner_area .banner_inner {
-        min-height: 500px;
-    }
     .blog_banner .banner_inner .blog_b_text {
         margin-top: 0px;
     }
@@ -438,13 +395,6 @@
         right: -13px;
     }
     /* End Home Banner Area css
-	============================================================================================ */
-    /* About Myself Area css
-	============================================================================================ */
-    .about_myself .about_box {
-        padding: 50px 15px 20px;
-    }
-    /* End About Myself Area css
 	============================================================================================ */
     .feedback_area .active-review-carusel .single-feedback-carusel {
         margin-top: 40px;
@@ -534,28 +484,7 @@
     }
     /* End Main Menu Area css
 	============================================================================================ */
-    /* Home Banner Area css
-	============================================================================================ */
-    .home_banner_area .banner_inner .banner_content {
-        padding-top: 130px;
-    }
-    .home_banner_area .banner_inner .banner_content h1 {
-        font-size: 35px;
-    }
-    .banner_content .white_btn {
-        display: block;
-    }
-    .home_banner_area .banner_inner .banner_content h3 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    /* End Home Banner Area css
-	============================================================================================ */
-    .banner_area .banner_inner .banner_content h2 {
-        font-size: 32px;
-    }
-    /* Hot deal Page Area css
-	============================================================================================ */
+
     /* Blog Page Area css
 	============================================================================================ */
     .comments-area .thumb {
@@ -563,12 +492,6 @@
     }
     /* End Blog Page Area css
 	============================================================================================ */
-    .home_banner_area {
-        min-height: 500px;
-    }
-    .home_banner_area .banner_inner {
-        min-height: 500px;
-    }
     .single-recent-blog h4 {
         margin-top: 20px;
     }
