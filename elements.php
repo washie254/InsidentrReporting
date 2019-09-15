@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<link rel="icon" href="img/favicon.png" type="image/png" />
-	<title>Hlagoon Logistics</title>
+	<title>Incident Reporting</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="vendors/linericon/style.css" />
@@ -22,112 +22,94 @@
 </head>
 
 <body>
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="top_menu d-lg-block d-none">
-			<div class="container">
+	 <!--================Header Menu Area =================-->
+	 <header class="header_area">
+			<div class="top_menu d-lg-block d-none">
+			  <div class="container">
 				<div class="float-left">
-					<ul class="left_side">
-						<li>
-							<a href="login.html">
-								<i class="fa fa-facebook-f"></i>
-							</a>
-						</li>
-						<li>
-							<a href="login.html">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="login.html">
-								<i class="fa fa-dribbble"></i>
-							</a>
-						</li>
-						<li>
-							<a href="login.html">
-								<i class="fa fa-behance"></i>
-							</a>
-						</li>
-					</ul>
+				  <ul class="left_side">
+					<!-- <li>
+					  <a href="login.html">
+						<i class="fa fa-facebook-f"></i>
+					  </a>
+					</li> -->
+					<li style="color: white; font-family:Arial; ">
+					  <!-- logged in user information -->
+					   <?php  if (isset($_SESSION['username'])) : ?>
+					  <strong><?php echo strtoupper($_SESSION['username']); ?></strong>	
+					  <?php endif ?>
+					</li>
+				  </ul>
 				</div>
 				<div class="float-right">
-					<ul class="right_side">
-						<li>
-							<a href="login.html">
-								<i class="lnr lnr-phone-handset"></i>
-								012-6532-568-9746
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="lnr lnr-envelope"></i>
-								emergency@colorlib.com
-							</a>
-						</li>
-					</ul>
+				  <ul class="right_side">
+					<li>
+					  <a href="login.html">
+						<i class="lnr lnr-phone-handset"></i>
+						sammy@gmail.com
+					  </a>
+					</li>
+					<li>
+					  <a href="#">
+						<i class="lnr lnr-envelope"></i>
+						incidentreportingKenya@gmail.com
+					  </a>
+					</li>
+				  </ul>
 				</div>
+			  </div>
 			</div>
-		</div>
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg w-100">
+			<div class="main_menu">
+			  <nav class="navbar navbar-expand-lg w-100">
 				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html">
-						<img src="img/logo.png" alt="" />
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<div class="row w-100">
-							<div class="col-lg-12 pr-lg-0">
-								<ul class="nav navbar-nav ml-auto justify-content-end">
-									<li class="nav-item">
-										<a class="nav-link" href="index.html">Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="about.html">About</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="services.html">Services</a>
-									</li>
-									<li class="nav-item submenu dropdown active">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										 aria-expanded="false">Pages</a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a class="nav-link" href="elements.html">Elements</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item submenu dropdown">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										 aria-expanded="false">Blog</a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a class="nav-link" href="blog.html">Blog</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="blog-details.html">Blog Details</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="contact.html">Contact</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+				  <!-- Brand and toggle get grouped for better mobile display -->
+				  <a class="navbar-brand logo_h" href="index.html">
+					<img src="img/logo.png" alt="" />
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<div class="row w-100">
+					  <div class="col-lg-12 pr-lg-0">
+						<ul class="nav navbar-nav ml-auto justify-content-end">
+						  <li class="nav-item active">
+							<a class="nav-link" href="index.php">Home</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="reported.php">Reported Incidents</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="report.php">Report</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="maps.php">Maps</a>
+						  </li>
+						  <li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							  aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu">
+							  <li class="nav-item">
+								<a class="nav-link" href="elements.html">Elements</a>
+							  </li>
+							</ul>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						  </li>
+						</ul>
+					  </div>
 					</div>
+				  </div>
 				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================Header Menu Area =================-->
+			  </nav>
+			</div>
+		  </header>
+		  <!--================Header Menu Area =================-->
 
 	<!--================ Home Banner Area =================-->
 	<section class="home_banner_area banner-area">
@@ -854,57 +836,59 @@
 
 	<!--================ start footer Area =================-->
 	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
+			<div class="container">
+			  <div class="row">
 				<div class="col-lg-5 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>About Us</h6>
-						<p>
-							If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it
-							has
-							that.
-						</p>
-					</div>
+				  <div class="single-footer-widget">
+					<h6>About Us</h6>
+					<p>
+					  Incident reporting System is build as a system to be used for reporting incidents 
+					  happening across kenya . the system is build to help easy accessibility to the govt resources with 
+					  regards to incidents.
+					</p>
+				  </div>
 				</div>
 				<div class="col-lg-5  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
-						<div class="" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
-								<input class="form-control" name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'"
-								 required="" type="email">
-								<button class="click-btn btn btn-default"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<div class="info"></div>
-							</form>
+				  <div class="single-footer-widget">
+					<h6>Newsletter</h6>
+					<p>Stay update with our latest</p>
+					<div class="" id="mc_embed_signup">
+					  <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+						method="get" class="form-inline">
+						<input class="form-control" name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
+						  onblur="this.placeholder = 'Email Address'" required="" type="email">
+						<button class="click-btn btn btn-default"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<div style="position: absolute; left: -5000px;">
+						  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
 						</div>
+						<div class="info"></div>
+					  </form>
 					</div>
+				  </div>
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
-						<p>Let us be social</p>
-						<div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-						</div>
+				  <div class="single-footer-widget">
+					<h6>Follow Us</h6>
+					<p>on our socials</p>
+					<div class="footer-social d-flex align-items-center">
+					  <a href="#"><i class="fa fa-facebook"></i></a>
+					  <a href="#"><i class="fa fa-twitter"></i></a>
+					  <a href="#"><i class="fa fa-dribbble"></i></a>
+					  <a href="#"><i class="fa fa-linkedin"></i></a>
 					</div>
+				  </div>
 				</div>
-			</div>
-			<div class="row">
+			  </div>
+			  <div class="row">
 				<div class="col-lg-12">
-					<p class="footer-text">Copyright © 2019 All rights reserved<a href="http://colorlib.com"> Colorlib</a></p>
+				  <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		Copyright &copy;<script>document.write(new Date().getFullYear());</script> All  |  <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">SAM</a>
+		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				</div>
+			  </div>
 			</div>
-		</div>
-	</footer>
-	<!--================ End footer Area =================-->
+		  </footer>
+		  <!--================ End footer Area =================-->
 
 	<!--================ Optional JavaScript =================-->
 	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
